@@ -11,7 +11,7 @@
   "main": "./lib/hubspot",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Datahero/node-hubspot.git"
+    "url": "https://github.com/HavenInc/node-hubspot.git"
   },
   "scripts": {
     "test": "mocha ./test"
