@@ -14,7 +14,11 @@
     "url": "https://github.com/HavenInc/node-hubspot.git"
   },
   "scripts": {
-    "test": "mocha ./test"
+    "bump": "npm version patch && git push && git push --tags",
+    "bump:minor": "npm version minor && git push && git push --tags",
+    "bump:major": "npm version major && git push && git push --tags",
+    "test": "mocha ./test",
+    "release-notes": "git log --oneline --grep='Merge pull' `git describe --abbrev=0 --tags \\`git describe --abbrev=0 \\`^`...`git describe --abbrev=0`"
   },
   "dependencies": {
     "chai": "^3.5.0",
